@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 typedef struct Cliente{
-  int timeArrived;
+  float timeArrived;
 }Cliente;
 
 typedef struct Queue{
