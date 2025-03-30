@@ -31,14 +31,14 @@ float time_next_event[3]; // array de los eventos futuros (hay 1 solo servidor) 
 Queue cola_clientes;        // almacena la cola de clientes
 
 int num_custs_delayed;      // para contar los clientes (SIN USAR!!!!!!!!!!!)
-float total_of_delays;        // aca guardo el tiempo que que se retrsan en la cola (al final divido por n) 
+float total_of_delays;        // aca guardo el tiempo que que se retrsan en la cola (al final divido por n)
 float area_num_in_q;        // area bajo la curva de q (longitud promedio de la cola)
 float area_server_status;   // utilizacion del servidor
 
 int next_event_type;        // tipo del prox. evento (1:arrive y 0:depart)
 
 int final_condition;        // cond. de finalizacion del ciclo
-float final_time = 100;
+float final_time = 300;
 
 int num_entities; // contador de cant de clientes que pasan por el sist.
 
@@ -112,8 +112,8 @@ void initialize(void)  /* Initialization function. */
     /* Initialize event list.  Since no customers are present, the departure
        (service completion) event is eliminated from consideration. */
 
-    time_next_event[1] = sim_time + gen_next_interarrive(); // Planificacion del primer arribo
-    time_next_event[2] = 1.0e+30; //infinito 
+    time_next_event[1] = sim_time + gen_next_interarrive(); // planificacion del primer arribo
+    time_next_event[2] = 1.0e+30;                           // infinito
 
     num_entities = 1;
 
@@ -160,7 +160,7 @@ void arrive(void)  /* Arrival event function. */
     if (server_status == BUSY) {
 
         /* Server is busy, so increment number of customers in queue. */
-        Cliente c; 
+        Cliente c;
         c.timeArrived = sim_time;
 
         push(c, &cola_clientes);
@@ -245,10 +245,10 @@ void report(void)  /* Report generator function. */
     printf("Average delay in queue  : %f\n", total_of_delays/num_entities);
 
     //Average number in queue
-    printf("Average number in queue : %f\n", area_num_in_q/100); // o / 100?
+    printf("Average number in queue : %f\n", area_num_in_q/final_time); // o / 100?
 
     //Server utilization
-    printf("Server utilization      : %f\n", area_server_status/100);
+    printf("Server utilization      : %f\n", area_server_status/final_time);
 
 }
 

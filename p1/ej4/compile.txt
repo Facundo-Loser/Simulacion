@@ -1,1 +1,3 @@
 gcc p1/ej4/main.c p1/ej4/lcgrand.c -o p1/ej4/build/main
+
+gcc p1/ej4/main2.c p1/ej4/lcgrand.c -o p1/ej4/build/main2
