@@ -75,7 +75,7 @@ int main(void) { /* Main function. */
         debug();
     }
 
-    // chequear si todavia quedan clients en cola y terminar correctamente la simulacion
+    // chequear si todavia quedan clientes en cola o un arribo sin ejecutar y terminar correctamente la simulacion
 
     end_sim();
 

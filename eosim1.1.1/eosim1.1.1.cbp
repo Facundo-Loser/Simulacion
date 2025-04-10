@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="eosim1.1.1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./lib/eosim1_1_1" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="./lib" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall -O1" />
+			<Add directory="./include" />
+			<Add directory="../libs/boost_1_33_1" />
+			<Add directory="../libs/SDL_image-1.2.5/include" />
+			<Add directory="../libs/SDL-1.2.11/include" />
+			<Add directory="../libs/agg23/include" />
+			<Add directory="../libs/agg23/font_freetype" />
+			<Add directory="../libs/freetype-2.1.10/include" />
+		</Compiler>
+		<Unit filename="include/eosim/core.hpp" />
+		<Unit filename="include/eosim/core/bcalendar.hpp" />
+		<Unit filename="include/eosim/core/bevent.hpp" />
+		<Unit filename="include/eosim/core/bin.hpp" />
+		<Unit filename="include/eosim/core/ccalendar.hpp" />
+		<Unit filename="include/eosim/core/cevent.hpp" />
+		<Unit filename="include/eosim/core/entity.hpp" />
+		<Unit filename="include/eosim/core/experiment.hpp" />
+		<Unit filename="include/eosim/core/model.hpp" />
+		<Unit filename="include/eosim/core/nonrenewable.hpp" />
+		<Unit filename="include/eosim/core/renewable.hpp" />
+		<Unit filename="include/eosim/dist.hpp" />
+		<Unit filename="include/eosim/dist/distmanager.hpp" />
+		<Unit filename="include/eosim/dist/distribution.hpp" />
+		<Unit filename="include/eosim/dist/lognormaldist.hpp" />
+		<Unit filename="include/eosim/dist/mt19937.hpp" />
+		<Unit filename="include/eosim/dist/negexpdist.hpp" />
+		<Unit filename="include/eosim/dist/normaldist.hpp" />
+		<Unit filename="include/eosim/dist/numbergenerator.hpp" />
+		<Unit filename="include/eosim/dist/numbergeneratorfactory.hpp" />
+		<Unit filename="include/eosim/dist/poissondist.hpp" />
+		<Unit filename="include/eosim/dist/uniformdist.hpp" />
+		<Unit filename="include/eosim/graphic.hpp" />
+		<Unit filename="include/eosim/statics.hpp" />
+		<Unit filename="include/eosim/statics/histogram.hpp" />
+		<Unit filename="include/eosim/statics/observation.hpp" />
+		<Unit filename="include/eosim/statics/timeseries.hpp" />
+		<Unit filename="include/eosim/statics/timeweighted.hpp" />
+		<Unit filename="include/eosim/utils.hpp" />
+		<Unit filename="include/eosim/utils/beventmap.hpp" />
+		<Unit filename="include/eosim/utils/ceventvector.hpp" />
+		<Unit filename="include/eosim/utils/distvector.hpp" />
+		<Unit filename="include/eosim/utils/entityqueue.hpp" />
+		<Unit filename="include/eosim/utils/entityqueuefifo.hpp" />
+		<Unit filename="include/eosim/utils/entityqueuelifo.hpp" />
+		<Unit filename="include/eosim/utils/entityqueueordered.hpp" />
+		<Unit filename="src/eosim/core/bcalendar.cpp" />
+		<Unit filename="src/eosim/core/bevent.cpp" />
+		<Unit filename="src/eosim/core/bin.cpp" />
+		<Unit filename="src/eosim/core/ccalendar.cpp" />
+		<Unit filename="src/eosim/core/cevent.cpp" />
+		<Unit filename="src/eosim/core/entity.cpp" />
+		<Unit filename="src/eosim/core/experiment.cpp" />
+		<Unit filename="src/eosim/core/model.cpp" />
+		<Unit filename="src/eosim/core/nonrenewable.cpp" />
+		<Unit filename="src/eosim/core/renewable.cpp" />
+		<Unit filename="src/eosim/dist/distmanager.cpp" />
+		<Unit filename="src/eosim/dist/distribution.cpp" />
+		<Unit filename="src/eosim/dist/lognormaldist.cpp" />
+		<Unit filename="src/eosim/dist/mt19937.cpp" />
+		<Unit filename="src/eosim/dist/negexpdist.cpp" />
+		<Unit filename="src/eosim/dist/normaldist.cpp" />
+		<Unit filename="src/eosim/dist/numbergeneratorfactory.cpp" />
+		<Unit filename="src/eosim/dist/poissondist.cpp" />
+		<Unit filename="src/eosim/dist/uniformdist.cpp" />
+		<Unit filename="src/eosim/statics/histogram.cpp" />
+		<Unit filename="src/eosim/statics/observation.cpp" />
+		<Unit filename="src/eosim/statics/timeseries.cpp" />
+		<Unit filename="src/eosim/statics/timeweighted.cpp" />
+		<Unit filename="src/eosim/utils/beventmap.cpp" />
+		<Unit filename="src/eosim/utils/ceventvector.cpp" />
+		<Unit filename="src/eosim/utils/distvector.cpp" />
+		<Unit filename="src/eosim/utils/entityqueuefifo.cpp" />
+		<Unit filename="src/eosim/utils/entityqueuelifo.cpp" />
+		<Unit filename="src/eosim/utils/entityqueueordered.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

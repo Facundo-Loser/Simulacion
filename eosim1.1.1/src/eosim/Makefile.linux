@@ -1,0 +1,110 @@
+# Project: eosim
+# Makefile created by Dev-C++ 4.9.8.0
+
+BUILD  = <Eosim_library_paht>
+BUILD_LIB = $(BUILD)/lib
+BUILD_BIN = $(BUILD)/bin
+
+RES  = $(BUILD_LIB)/libeosim.a
+OBJ  = $(BUILD_BIN)/distmanager.o $(BUILD_BIN)/distribution.o $(BUILD_BIN)/lognormaldist.o $(BUILD_BIN)/mt19937.o $(BUILD_BIN)/negexpdist.o $(BUILD_BIN)/normaldist.o $(BUILD_BIN)/numbergeneratorfactory.o $(BUILD_BIN)/poissondist.o $(BUILD_BIN)/uniformdist.o $(BUILD_BIN)/beventmap.o $(BUILD_BIN)/ceventvector.o $(BUILD_BIN)/distvector.o $(BUILD_BIN)/entityqueuefifo.o $(BUILD_BIN)/entityqueuelifo.o $(BUILD_BIN)/entityqueueordered.o $(BUILD_BIN)/bcalendar.o $(BUILD_BIN)/bevent.o $(BUILD_BIN)/bin.o $(BUILD_BIN)/ccalendar.o $(BUILD_BIN)/cevent.o $(BUILD_BIN)/entity.o $(BUILD_BIN)/experiment.o $(BUILD_BIN)/model.o $(BUILD_BIN)/nonrenewable.o $(BUILD_BIN)/renewable.o $(BUILD_BIN)/histogram.o $(BUILD_BIN)/timeseries.o $(BUILD_BIN)/timeweighted.o
+
+CPP  = g++
+CXXINCS = #fill with c++ includes
+INCS = $(CXXINCS) -I".."
+CXXFLAGS = $(INCS) -Wall -pedantic
+
+.PHONY: all all-before all-after clean clean-custom
+
+all:	$(RES)
+	rm -f $(OBJ)
+
+clean: clean-custom
+	rm -f $(OBJ) $(RES)
+
+$(RES): $(OBJ)
+	ar r $(RES) $(OBJ)
+	ranlib $(RES)
+
+$(BUILD_BIN)/distmanager.o: dist/distmanager.cpp
+	$(CPP) -c dist/distmanager.cpp -o $(BUILD_BIN)/distmanager.o $(CXXFLAGS)
+
+$(BUILD_BIN)/distribution.o: dist/distribution.cpp
+	$(CPP) -c dist/distribution.cpp -o $(BUILD_BIN)/distribution.o $(CXXFLAGS)
+
+$(BUILD_BIN)/lognormaldist.o: dist/lognormaldist.cpp
+	$(CPP) -c dist/lognormaldist.cpp -o $(BUILD_BIN)/lognormaldist.o $(CXXFLAGS)
+
+$(BUILD_BIN)/mt19937.o: dist/mt19937.cpp
+	$(CPP) -c dist/mt19937.cpp -o $(BUILD_BIN)/mt19937.o $(CXXFLAGS)
+
+$(BUILD_BIN)/negexpdist.o: dist/negexpdist.cpp
+	$(CPP) -c dist/negexpdist.cpp -o $(BUILD_BIN)/negexpdist.o $(CXXFLAGS)
+
+$(BUILD_BIN)/normaldist.o: dist/normaldist.cpp
+	$(CPP) -c dist/normaldist.cpp -o $(BUILD_BIN)/normaldist.o $(CXXFLAGS)
+
+$(BUILD_BIN)/numbergeneratorfactory.o: dist/numbergeneratorfactory.cpp
+	$(CPP) -c dist/numbergeneratorfactory.cpp -o $(BUILD_BIN)/numbergeneratorfactory.o $(CXXFLAGS)
+
+$(BUILD_BIN)/poissondist.o: dist/poissondist.cpp
+	$(CPP) -c dist/poissondist.cpp -o $(BUILD_BIN)/poissondist.o $(CXXFLAGS)
+
+$(BUILD_BIN)/uniformdist.o: dist/uniformdist.cpp
+	$(CPP) -c dist/uniformdist.cpp -o $(BUILD_BIN)/uniformdist.o $(CXXFLAGS)
+
+$(BUILD_BIN)/beventmap.o: utils/beventmap.cpp
+	$(CPP) -c utils/beventmap.cpp -o $(BUILD_BIN)/beventmap.o $(CXXFLAGS)
+
+$(BUILD_BIN)/ceventvector.o: utils/ceventvector.cpp
+	$(CPP) -c utils/ceventvector.cpp -o $(BUILD_BIN)/ceventvector.o $(CXXFLAGS)
+
+$(BUILD_BIN)/distvector.o: utils/distvector.cpp
+	$(CPP) -c utils/distvector.cpp -o $(BUILD_BIN)/distvector.o $(CXXFLAGS)
+
+$(BUILD_BIN)/entityqueuefifo.o: utils/entityqueuefifo.cpp
+	$(CPP) -c utils/entityqueuefifo.cpp -o $(BUILD_BIN)/entityqueuefifo.o $(CXXFLAGS)
+
+$(BUILD_BIN)/entityqueuelifo.o: utils/entityqueuelifo.cpp
+	$(CPP) -c utils/entityqueuelifo.cpp -o $(BUILD_BIN)/entityqueuelifo.o $(CXXFLAGS)
+
+$(BUILD_BIN)/entityqueueordered.o: utils/entityqueueordered.cpp
+	$(CPP) -c utils/entityqueueordered.cpp -o $(BUILD_BIN)/entityqueueordered.o $(CXXFLAGS)
+
+$(BUILD_BIN)/bcalendar.o: core/bcalendar.cpp
+	$(CPP) -c core/bcalendar.cpp -o $(BUILD_BIN)/bcalendar.o $(CXXFLAGS)
+
+$(BUILD_BIN)/bevent.o: core/bevent.cpp
+	$(CPP) -c core/bevent.cpp -o $(BUILD_BIN)/bevent.o $(CXXFLAGS)
+
+$(BUILD_BIN)/bin.o: core/bin.cpp
+	$(CPP) -c core/bin.cpp -o $(BUILD_BIN)/bin.o $(CXXFLAGS)
+
+$(BUILD_BIN)/ccalendar.o: core/ccalendar.cpp
+	$(CPP) -c core/ccalendar.cpp -o $(BUILD_BIN)/ccalendar.o $(CXXFLAGS)
+
+$(BUILD_BIN)/cevent.o: core/cevent.cpp
+	$(CPP) -c core/cevent.cpp -o $(BUILD_BIN)/cevent.o $(CXXFLAGS)
+
+$(BUILD_BIN)/entity.o: core/entity.cpp
+	$(CPP) -c core/entity.cpp -o $(BUILD_BIN)/entity.o $(CXXFLAGS)
+
+$(BUILD_BIN)/experiment.o: core/experiment.cpp
+	$(CPP) -c core/experiment.cpp -o $(BUILD_BIN)/experiment.o $(CXXFLAGS)
+
+$(BUILD_BIN)/model.o: core/model.cpp
+	$(CPP) -c core/model.cpp -o $(BUILD_BIN)/model.o $(CXXFLAGS)
+
+$(BUILD_BIN)/nonrenewable.o: core/nonrenewable.cpp
+	$(CPP) -c core/nonrenewable.cpp -o $(BUILD_BIN)/nonrenewable.o $(CXXFLAGS)
+
+$(BUILD_BIN)/renewable.o: core/renewable.cpp
+	$(CPP) -c core/renewable.cpp -o $(BUILD_BIN)/renewable.o $(CXXFLAGS)
+
+$(BUILD_BIN)/histogram.o: statics/histogram.cpp
+	$(CPP) -c statics/histogram.cpp -o $(BUILD_BIN)/histogram.o $(CXXFLAGS)
+
+$(BUILD_BIN)/timeseries.o: statics/timeseries.cpp
+	$(CPP) -c statics/timeseries.cpp -o $(BUILD_BIN)/timeseries.o $(CXXFLAGS)
+
+$(BUILD_BIN)/timeweighted.o: statics/timeweighted.cpp
+	$(CPP) -c statics/timeweighted.cpp -o $(BUILD_BIN)/timeweighted.o $(CXXFLAGS)

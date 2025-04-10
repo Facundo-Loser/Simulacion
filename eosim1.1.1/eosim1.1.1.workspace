@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="eosim1.1.1.cbp" />
+		<Project filename="Demos\hospital2G\hospital2G.cbp" active="1">
+			<Depends filename="eosim1.1.1.cbp" />
+		</Project>
+		<Project filename="Demos\hospital2\hospital2.cbp">
+			<Depends filename="eosim1.1.1.cbp" />
+		</Project>
+		<Project filename="Demos\repair3\repair3.cbp">
+			<Depends filename="eosim1.1.1.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
