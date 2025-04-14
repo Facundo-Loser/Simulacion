@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1744316763 source:c:\users\facun\simulacion\eosim1.1.1\demos\autoservicio\cliente.cpp
+	"Cliente.hpp"
+
+1744316732 c:\users\facun\simulacion\eosim1.1.1\demos\autoservicio\cliente.hpp
+
+1744297147 source:c:\users\facun\simulacion\eosim1.1.1\demos\autoservicio\main.cpp
+	<iostream>
+
+1744319943 source:c:\users\facun\simulacion\eosim1.1.1\demos\autoservicio\autoserviciosimple.cpp
+	"autoserviciosimple.hpp"
+	<eosim/core/entity.hpp>
+	<eosim/dist/numbergenerator.hpp>
+	<iostream>
+	<eosim/dist/normaldist.hpp>
+
+1744319405 c:\users\facun\simulacion\eosim1.1.1\demos\autoservicio\autoserviciosimple.hpp
+	<eosim/core/model.hpp>
+	<eosim/utils/entityqueuefifo.hpp>
+	<eosim/core/renewable.hpp>
+	<eosim/dist/negexpdist.hpp>
+	<eosim/statics/timeweighted.hpp>
+	<eosim/statics/observation.hpp>
+	<eosim/dist/normaldist.hpp>
+	"Cliente.hpp"
+
+1166017166 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\model.hpp
+	<string>
+	<eosim/core/entity.hpp>
+	<eosim/dist/distribution.hpp>
+	<eosim/utils/beventmap.hpp>
+	<eosim/utils/ceventvector.hpp>
+
+1166017166 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\entity.hpp
+
+1166017168 c:\users\facun\simulacion\eosim1.1.1\include\eosim\dist\distribution.hpp
+	<eosim/dist/numbergenerator.hpp>
+
+1166017170 c:\users\facun\simulacion\eosim1.1.1\include\eosim\dist\numbergenerator.hpp
+
+1166017174 c:\users\facun\simulacion\eosim1.1.1\include\eosim\utils\beventmap.hpp
+	<eosim/core/bevent.hpp>
+	<map>
+	<string>
+
+1166017164 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\bevent.hpp
+	<string>
+
+1166017176 c:\users\facun\simulacion\eosim1.1.1\include\eosim\utils\ceventvector.hpp
+	<eosim/core/cevent.hpp>
+	<vector>
+
+1166017166 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\cevent.hpp
+
+1166017176 c:\users\facun\simulacion\eosim1.1.1\include\eosim\utils\entityqueuefifo.hpp
+	<eosim/utils/entityqueue.hpp>
+	<deque>
+
+1166017176 c:\users\facun\simulacion\eosim1.1.1\include\eosim\utils\entityqueue.hpp
+	<eosim/core/entity.hpp>
+
+1166017168 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\renewable.hpp
+	<eosim/core/bin.hpp>
+
+1166017164 c:\users\facun\simulacion\eosim1.1.1\include\eosim\core\bin.hpp
+
+1166017170 c:\users\facun\simulacion\eosim1.1.1\include\eosim\dist\negexpdist.hpp
+	<eosim/dist/distribution.hpp>
+
+1166017174 c:\users\facun\simulacion\eosim1.1.1\include\eosim\statics\timeweighted.hpp
+	<eosim/statics/histogram.hpp>
+
+1166017172 c:\users\facun\simulacion\eosim1.1.1\include\eosim\statics\histogram.hpp
+	<string>
+	<map>
+	<utility>
+
+1166017174 c:\users\facun\simulacion\eosim1.1.1\include\eosim\statics\observation.hpp
+	<eosim/statics/histogram.hpp>
+
+1744294029 c:\users\facun\simulacion\eosim1.1.1\demos\hospital2\paciente.hpp
+	<eosim/core/bevent.hpp>
+	<eosim/core/entity.hpp>
+	<string>
+
+1166017170 c:\users\facun\simulacion\eosim1.1.1\include\eosim\dist\normaldist.hpp
+	<eosim/dist/distribution.hpp>
+
