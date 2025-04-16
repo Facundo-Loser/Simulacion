@@ -25,6 +25,8 @@ int main () {
 		m.tEspera.print(52);
 		std::cout << '\n';
 		m.uCamas.print(10);
+		std::cout << '\n';
+		printf("cant veces que robo: %d\n", m.cantVecesRobo);
 		std::cin >> s;
     }
 }

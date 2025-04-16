@@ -21,7 +21,9 @@ HospitalSimple::HospitalSimple(unsigned int cantCamas, double tasaArribos, doubl
 								lCola("Largos Medios de Colas", *this),
 								uCamas("Utilizacion prom servidor", *this),
 								usoRoboCamas(MT19937, 120.0, 2.0),
-								rC(*this) {}
+								rC(*this),
+								cantVecesRobo(0),
+								robar(true) {}
 
 
 HospitalSimple::~HospitalSimple() {}
@@ -42,6 +44,6 @@ void HospitalSimple::init() {
 void HospitalSimple::doInitialSchedules() {
 	// agendo el primer paciente
 	schedule(0.0, new Entity(), pacienteF);
-	schedule(20.0, new Entity(), robaCama);
+	schedule(0.0, new Entity(), robaCama);
 }
 

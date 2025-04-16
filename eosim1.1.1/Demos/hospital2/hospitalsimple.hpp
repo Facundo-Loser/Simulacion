@@ -56,6 +56,10 @@ public:
 	void init();
 	// lleva al modelo a su estado inicial, operacion abstracta de eosim::core::Model
 	void doInitialSchedules();
+
+	int cantVecesRobo;
+
+	bool robar;
 };
 
 #endif

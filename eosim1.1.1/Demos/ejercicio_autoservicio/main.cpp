@@ -9,7 +9,7 @@
 const unsigned int repeticiones = 4;
 
 unsigned int cantMaquinas = 1;
-double tasaArribos = 1.0 / 30.0;
+double tasaArribos = 30.0;
 
 int main() {
     std::string s;
@@ -20,7 +20,7 @@ int main() {
         std::cout << "Comienza la Simulacion!" << std::endl;
         m.connectToExp(&e);
         e.setSeed((unsigned long) i + 129);
-        e.run(1000.0);
+        e.run(10000.0);
         std::cout << "Termina la Simulacion!" << std::endl;
         m.lCola.print(10);
 		std::cout << '\n';

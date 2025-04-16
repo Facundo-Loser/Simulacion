@@ -36,8 +36,6 @@ public:
 const std::string robaCama = "RobaCamas";
 
 class RobaCamas: public eosim::core::BEvent {
-private:
-    bool robar;
 public:
 	// constructor
 	RobaCamas(eosim::core::Model& model);

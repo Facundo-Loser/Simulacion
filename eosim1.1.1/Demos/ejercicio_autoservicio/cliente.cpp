@@ -28,6 +28,7 @@ void InicioServicio::eventRoutine() {
     Autoservicio& a = dynamic_cast<Autoservicio&>(owner);
     while (!a.cola.empty() && a.maquinaCafe.isAvailable(1)) {
         // admitir el prox cliente de la cola
+        a.lCola.log(a.cola.size());
         eosim::core::Entity* ent = a.cola.pop();
 
         // adquirir recurso
